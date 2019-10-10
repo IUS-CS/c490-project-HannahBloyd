@@ -14,7 +14,7 @@ The app is going to be a minigame app. The idea for the app came from the idea o
 
 The app will start with a main menu screen. On this screen, there will be buttons to go to each individual game along with a scores menu that will hold the highest scores from all the games. Each game and the high scores will open is new activities in the app. In each activity there will be an option to quit the game and return to the home screen. At the end of each game, the app will save their score and then take them to the high scores page for that particular game. The app will use an MVC to save the user state when switching between configurations.
 
-All the data that comes from the scores will be stored in a database on the app. The app will only need to access the database on the score screens, which can be accessed from the main menu and at the end every game.
+All the data that comes from the scores will be stored in a database using Firebase. Firebase will be able to keep the database connected to more than a singular device. The app will only need to access the database on the score screens, which can be accessed from the main menu and at the end every game.
 
 === 2.1 User Interface
 
