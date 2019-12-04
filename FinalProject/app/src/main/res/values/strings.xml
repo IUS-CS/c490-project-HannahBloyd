@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="your_score">Your Score %1$d</string>
+    <string name="time_left">Time Left: %1$d"</string>
+    <string name="tapMe">Tap Me</string>
+    <string name="gameOverMessage">Times up! Your score was: %1$d</string>
+    <string name="game1">Time Fighter</string>
+    <string name="game2">Connect Four</string>
+    <string name="tfHowTo">To play TimeFighter, tap the button as many times as you can before time runs out.
+    Your score goes up with each tap of the button.
+    When time runs out, your score will be saved</string>
+    <string name="continueToGame">Continue To Game</string>
+    <string name="mainmenu">Return to Main Menu</string>
+    <string name="cfHowTo">Try to get 4 of your color checkers in a row horizontally, vertically, or diagonally before your opponent.
+        When its your turn, push a button to drop your piece.
+        Then, let your opponent take their turn.</string>
+    <string name="enterName">Please Enter Your Name</string>
+    <string name="database">View High Scores</string>
+    <string name="play">Play</string>
+</resources>
