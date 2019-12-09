@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class CFCompat : AppCompatActivity(), ConnectFour.Callbacks {
     override fun endConnectFour() {
-        val intent = TFHighScores.newIntent(this@CFCompat)
+        val intent = CFEnd.newIntent(this@CFCompat)
         startActivityForResult(intent, GAME2_CODE)
 
     }

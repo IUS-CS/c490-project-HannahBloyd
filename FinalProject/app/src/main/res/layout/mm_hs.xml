@@ -7,9 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/texgtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Menu"
+        android:text="Please choose a game to view the high scores"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,25 +22,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/game1_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game1" />
+
         <Button
             android:id="@+id/game2_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game2" />
-        <Button
-            android:id="@+id/hs_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/database" />
 
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

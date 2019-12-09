@@ -39,7 +39,7 @@ class ConnectFour : Fragment() {
         val col5Button: Button by lazy { view.findViewById<Button>(R.id.col5Button) }
         val col6Button: Button by lazy { view.findViewById<Button>(R.id.col6Button) }
 
-        score = 100
+        //score = 100
 
 
         col0Button.setOnClickListener{
@@ -102,10 +102,11 @@ class ConnectFour : Fragment() {
     fun endGame (){
         if (!winCounted) {
             winCounted = !winCounted
-            val user = ScoreEntry(winner.toString(), score)
-            viewModel.writeNewUser(user, "CF")
+            //val user = ScoreEntry(winner.toString(), score)
+            //viewModel.writeNewUser(user, "CF")
         }
         viewModel.updateGame("ConnectFour")
+        //viewModel.reset()
         callbacks?.endConnectFour()
 
     }

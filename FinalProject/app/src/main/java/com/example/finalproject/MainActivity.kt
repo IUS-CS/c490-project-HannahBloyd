@@ -11,12 +11,14 @@ import androidx.lifecycle.ViewModelProviders
 
 const val GAME1_CODE = 0
 const val GAME2_CODE = 1
+const val DEFAULT_CODE = 2
 const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 
     private val game1Button: Button by lazy { findViewById<Button>(R.id.game1_button) }
     private val game2Button: Button by lazy { findViewById<Button>(R.id.game2_button) }
+    private val highScoresButton: Button by lazy { findViewById<Button>(R.id.hs_button) }
 
     private val viewModel: FinalViewModel by lazy {
         ViewModelProviders.of(this).get(FinalViewModel::class.java)
@@ -25,10 +27,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-//        val intent = AddActivity.newIntent(this@MainActivity)
-//        startActivityForResult(intent, ADD_CODE)
 
         game1Button.setOnClickListener{
             val intent = HowToTimeFighter.newIntent(this@MainActivity)
@@ -39,6 +37,11 @@ class MainActivity : AppCompatActivity() {
         game2Button.setOnClickListener{
             val intent = HowToConnectFour.newIntent(this@MainActivity)
             startActivityForResult(intent, GAME2_CODE)
+        }
+
+        highScoresButton.setOnClickListener{
+            val intent = HighScoresMainMenu.newIntent(this@MainActivity)
+            startActivityForResult(intent, DEFAULT_CODE)
         }
 
 

@@ -17,4 +17,5 @@
     <string name="enterName">Please Enter Your Name</string>
     <string name="database">View High Scores</string>
     <string name="play">Play</string>
+    <string name="cfWinner">The winner was Player %1$d</string>
 </resources>

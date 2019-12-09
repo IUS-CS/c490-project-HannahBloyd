@@ -32,6 +32,18 @@ class FinalViewModel : ViewModel(){
         currentGame = value
     }
 
+    fun getwinner() : Int{
+        return winner
+    }
+
+    fun reset(){
+        circles.clear()
+        grid = emptyGrid()
+        currentPlayer = 1
+        winner = 0
+        score = 100
+    }
+
     fun writeNewUser(user :ScoreEntry, game :String) {
 
         if (game == "TF")
